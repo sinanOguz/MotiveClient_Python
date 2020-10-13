@@ -14,9 +14,7 @@ DoubleValue = struct.Struct('<d')
 
 
 # use your client IP address
-myIP = "192.168.0.96"
-# use your server IP address
-serverIP = "192.168.0.93"
+myIP = "192.168.1.72"
 # note the multicast IP address and 
 # data and command socket port numbers from Motive SW.
 # if they don't match, there won't be a connection.
@@ -29,7 +27,6 @@ NAT_FRAMEOFDATA = 7
 class MotiveClient:
   # constructor 
   def __init__(self):
-    self.serverIPAddress = serverIP
     self.multicastAddress = multiCastAddress
     # specifies the port to be used for streaming data from the server to the client
     self.dataPort = 1511
